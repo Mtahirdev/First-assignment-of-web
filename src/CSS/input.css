@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+
+/* npx @tailwindcss/cli -i ./src/CSS/input.css -o ./src/CSS/output.css --watch */
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-animation {
+  animation: slideIn 0.8s ease-in-out;
+}
